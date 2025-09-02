@@ -1,16 +1,19 @@
 # payment_gateway
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+payment-app/
+│
+├── flutter_app/           # Flutter frontend (mobile app)
+│   ├── lib/               # Dart source code
+│   ├── pubspec.yaml       # Dependencies
+│   └── ...                
+│
+├── backend/               # Golang backend service
+│   ├── main.go            # Entry point
+│   ├── routes/            # API routes
+│   ├── services/          # Business logic
+│   ├── models/            # Database models
+│   └── go.mod             
+│
+├── docker-compose.yml     # Multi-service container setup
+├── README.md              # Documentation
+└── docs/                  # API docs, diagrams, etc.
